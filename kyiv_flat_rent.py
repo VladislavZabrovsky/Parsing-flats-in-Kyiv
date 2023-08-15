@@ -77,4 +77,4 @@ for soup in parse_pages():
 if all_info:
     sql_add(all_info)
 
-print(f'{len(all_info)} flats processed and added to the database')
+print(f'{len(all_info) - 1} flats processed and added to the database')
