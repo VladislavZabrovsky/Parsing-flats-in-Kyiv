@@ -72,7 +72,7 @@ for soup in parse_pages():
     info = derive_info(soup)
     if info:
         all_info.extend(info)
-    print(f'{count - 1} page(s) processed')
+    print(f'{count} page(s) processed')
 
 if all_info:
     sql_add(all_info)
